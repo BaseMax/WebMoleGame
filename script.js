@@ -1,6 +1,5 @@
 // Max Base
 // https://github.com/BaseMax/WebMoleGame
-// var body=document.querySelector("body");
 var score=0;
 var win=document.querySelector("#win");
 var container=document.querySelector("#container");
@@ -44,6 +43,7 @@ function showHole() {
 		image.classList.remove("gone");
 		image.classList.remove("sad");
 		image.classList.remove("fed");
+		image.classList.remove("king");
 		image.classList.add("hungry");
 		if(Math.random() >= 0.8) { // ~ 20%
 			image.classList.add("king");
@@ -61,6 +61,7 @@ function showHole() {
 			*/
 			setTimeout(function() {
 				image.classList.add("gone");
+				image.classList.remove("king");
 			}, TIME_SHOW_SADLY);
 		}, TIME_OF_A_MOLE);
 	}
@@ -100,7 +101,12 @@ window.addEventListener("load", function() {
 				if(statusHoles[id]["timer"]) {
 					clearTimeout(statusHoles[id]["timer"]);
 					statusHoles[id]={};
-					updateScore(+1);
+					if(image.classList.contains("king")) {
+						updateScore(+2);
+					}
+					else {
+						updateScore(+1);
+					}
 					image.classList.remove("hungry");
 					image.classList.add("fed");
 					setTimeout(function() {
