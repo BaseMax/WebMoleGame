@@ -2,7 +2,9 @@
 
 Mole game with HTML, CSS, JavaScript. (Web-based)
 
-![Demo Web Mole Game](demo.png)
+[![Demo Web Mole Game](demo.png)](http://basemax.github.io/WebMoleGame/)
+
+Demo: http://basemax.github.io/WebMoleGame/
 
 ## Description of Game
 
