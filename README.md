@@ -33,6 +33,36 @@ We even have beautiful artwork for you to use, drawn by the talented **Alice Bre
 
 https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
 
+### What's requestAnimationFrame in javascript?
+
+Sample code copied:
+```
+<div>setInterval <span id="interval">0</span></div>
+<div>requestAnimationFrame <span id="raf">0</span></div>
+<script>
+  const interval = document.getElementById("interval")
+  const raf = document.getElementById("raf")
+
+  let intervalCount = 0;
+  setInterval(function() {
+    interval.innerText = intervalCount;
+    intervalCount++;
+  }, 1000);
+
+  let rafCount = 0;
+  let runAgainAt = Date.now();
+  function rafCounter() {
+    if (Date.now() > runAgainAt) {
+      raf.innerText = rafCount;
+      rafCount++;
+      runAgainAt = Date.now() + 1000;
+    }
+    requestAnimationFrame(rafCounter);
+  }
+  requestAnimationFrame(rafCounter);
+</script>
+```
+
 ---------
 
 # Max Base
