@@ -8,7 +8,7 @@ Demo: http://basemax.github.io/WebMoleGame/
 
 ## Description of Game
 
-This is a hard project but you can do it! I'd recommend taking it in steps rather than trying to do everything at once. Some sort of progression. I'd recommend something like:
+<del>This is a hard project</del> but you can do it! I'd recommend taking it in steps rather than trying to do everything at once. Some sort of progression. I'd recommend something like:
 
 - Get all the **CSS** and **HTML** on the page. Have ten holes with a hungry mole in each. No JS done yet.
 - Make the moles show up and disappear (don't worry about the sad face / butt yet.) Don't make them clickable yet, just have them disappear and reappear after a random interval.
