@@ -1,3 +1,5 @@
+// Max Base
+// https://github.com/BaseMax/WebMoleGame
 // var body=document.querySelector("body");
 var score=0;
 var win=document.querySelector("#win");
@@ -43,6 +45,9 @@ function showHole() {
 		image.classList.remove("sad");
 		image.classList.remove("fed");
 		image.classList.add("hungry");
+		if(Math.random() >= 0.8) { // ~ 20%
+			image.classList.add("king");
+		}
 		statusHoles[random]["timer"]=setTimeout(function() {
 			statusHoles[random]={};
 			image.classList.add("sad");
