@@ -11,7 +11,7 @@ const TIME_SHOW_GONE=500;
 const TIME_SHOW_LEAVING=200;
 const TIME_SHOW_SADLY=2000;
 const TIME_SHOW_FED=1000;
-const TIME_SHOW_WORM=2000;
+const TIME_SHOW_WORM=1000;
 var statusHoles=[];
 if(!Element.prototype.triggerEvent) {
 	Element.prototype.triggerEvent = function(eventName) {
@@ -68,6 +68,9 @@ function showHole() {
 }
 function updateScore(value) {
 	score+=value;
+	if(score>10) {
+		score=10;
+	}
 	if(value > 0) {
 		console.log("SUCCESS / Score: "+score);
 	}
