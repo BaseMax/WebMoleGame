@@ -45,7 +45,7 @@ function showHole() {
 		image.classList.remove("fed");
 		image.classList.remove("king");
 		image.classList.add("hungry");
-		if(Math.random() >= 0.8) { // ~ 20%
+		if(Math.random() >= 0.9) { // ~ 20%
 			image.classList.add("king");
 		}
 		statusHoles[random]["timer"]=setTimeout(function() {
