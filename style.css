@@ -1,1 +1,111 @@
-
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+html, body {
+	height: 100%;
+}
+body {
+	background-color: #c0c86d;
+}
+img {
+	max-width: 100%;
+}
+#win {
+	text-align: center;
+	top: 20%;
+	bottom: 20%;
+	position: relative;
+	margin: auto;
+	width: 600px;
+	height: 600px;
+	margin-bottom: 10%;
+}
+#worm-box {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+#worm {
+	margin: auto;
+	width: 6%;
+	height: 127px;
+	transition: width 0.5s ease-in-out;
+	overflow: hidden;
+	background-image: url('images/worm.png');
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+}
+#container {
+	padding-top: 30px;
+	padding-bottom: 50px;
+	cursor: url('images/cursor.png'), auto;
+	width: 100%;
+	height: auto;
+	min-height: 100%; /*need to solve a bug/problem in chromium*/
+	background-image: url('images/background.png');
+	/*background-size: 100% 100%;*/
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
+}
+.hole-container {
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 2%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.hole {
+	width: 23%;
+	height: 17%;
+	margin: 1%;
+}
+.gone {
+	display: none;
+	/*opacity: 0;*/
+	/*visibility: hidden;*/
+}
+.hole-box {
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	border-radius: 50%;
+	text-align: center;
+}
+.hole .image {
+	margin: auto;
+	width: 200px;
+	height: 200px;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+/*images*/
+.hole .image.hungry {
+	background-image: url('images/mole-hungry.png');
+}
+.hole .image.leaving {
+	background-image: url('images/mole-leaving.png');
+}
+.hole .image.sad {
+	background-image: url('images/mole-sad.png');
+}
+.hole .image.fed {
+	background-image: url('images/mole-fed.png');
+}
+/*king images*/
+.hole .image.hungry.king {
+	background-image: url('images/king-mole-hungry.png');
+}
+.hole .image.leaving.king {
+	background-image: url('images/king-mole-leaving.png');
+}
+.hole .image.sad.king {
+	background-image: url('images/king-mole-sad.png');
+}
+.hole .image.fed.king {
+	background-image: url('images/king-mole-fed.png');
+}
