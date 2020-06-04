@@ -2,6 +2,8 @@
 
 Mole game with HTML, CSS, JavaScript. (Web-based)
 
+![Demo Web Mole Game](demo.png)
+
 ## Idea of project
 
 **Exercise:** Feed-A-Star-Mole
