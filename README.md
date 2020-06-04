@@ -27,6 +27,12 @@ Here's your next project, a fun variant on the game Whack-A-Mole. If you're not 
 
 We even have beautiful artwork for you to use, drawn by the talented **Alice Brereton**.
 
+## TODO
+
+- Rewrite timers into `requestAnimationFrame`, And it will be better with good performance.
+
+https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+
 ---------
 
 # Max Base
